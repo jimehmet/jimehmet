@@ -1,35 +1,41 @@
-Rapid Reply
+# Rapid Reply
 
-Overview
-Rapid Reply is a userscript designed to assist with correspondence tasks, providing pre-defined templates for common messages. It's developed to work with browser extensions like Tampermonkey.
+Rapid Reply is a Tampermonkey userscript designed to assist with correspondence by providing quick access to predefined templates and managing copy history.
 
-Features
+## Features
 
-Template Management: Easily manage and customize templates for various types of messages.
-Clipboard Integration: Copy templates to the clipboard with a single click for quick pasting.
-Copy History: Keep track of copied messages with a history feature.
-Team-Specific Templates: Organize templates based on different teams or use cases.
-Customizable UI: Configure the user interface to suit your preferences.
+- Select from a variety of predefined templates for common correspondence scenarios.
+- Easily copy templates to the clipboard with a single click.
+- Manage copy history to keep track of previously copied text.
+- Edit templates on-the-fly for customization.
 
-Installation
+## Installation
 
-To use Rapid Reply, you need a browser extension like Tampermonkey. 
-Follow these steps to install:
+To use Rapid Reply, you'll need to have Tampermonkey installed in your browser. Once installed, follow these steps:
 
-Install 
-Tampermonkey for your browser if you haven't already. Go to the Rapid Reply userscript page.
-Tampermonkey should detect the userscript and prompt you to install it. Click on "Install" to proceed.
+1. Click on the Tampermonkey icon in your browser's toolbar.
+2. Select "Create a new script".
+3. Delete any existing code in the editor.
+4. Copy and paste the code from `rapid-reply.user.js` into the editor.
+5. Save the script by pressing `Ctrl + S` or selecting "File" > "Save".
 
-Usage
+## Usage
 
-Once installed, navigate to a webpage where you want to use Rapid Reply.
-Click on the Rapid Reply logo in the browser toolbar to open the user interface.
-Select a template from the dropdown menu or manage templates as needed.
-Click on a template to copy it to the clipboard.
-Paste the copied template into your desired text field.
-Customization
-You can customize Rapid Reply by modifying the userscript file directly or by using the user interface provided.
+1. After installing the script, a new button labeled "Rapid Reply" will appear in the bottom right corner of your browser window.
+2. Clicking on the "Rapid Reply" button will open a dropdown menu with options to select predefined templates, edit templates, view copy history, and exit the script.
+3. Select a template from the dropdown menu to copy it to your clipboard.
+4. You can also access additional features like editing templates and viewing copy history through the dropdown menu.
 
-Contributing
+## Contribution
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Contributions to Rapid Reply are welcome! If you'd like to contribute to the project, please follow these guidelines:
+
+- Fork the repository on GitHub.
+- Create a new branch for your feature or bug fix.
+- Make your changes and test them thoroughly.
+- Submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
