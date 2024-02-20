@@ -9,6 +9,7 @@
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @updateURL    https://github.com/jimehmet/jimehmet/edit/main/rapid-reply.user.js
+// @downloadURL  https://github.com/jimehmet/jimehmet/edit/main/rapid-reply.user.js
 // ==/UserScript==
 
 
