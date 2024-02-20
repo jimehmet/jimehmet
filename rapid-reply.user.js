@@ -30,39 +30,55 @@
 (function () {
     'use strict';
 
-    // Team-specific templates and team selection
-    const teams = {
-        "GDN Scoping Team": {
-            templates: {
-                "GDN node first reply": `Hi,
+    let templates = GM_getValue('templates', {
+        "GDN node first reply": `Hi,
 GDN scoping team looking into this request and will update the subtask for next steps.
 
 Regards,
 Your Name`,
-                // Add more templates as needed
-            }
-        },
-        // Add more teams as needed
-    };
+        "Scoping Done - RW Needed": `Hi,
+Scoping completed. Please find the details below:
+New initiative created for (initiative name):
+(Link to initiative)
+List of PBs:
+(Name of PB) – (note: reused / created (TT link))
+(Name of PB) – (note: reused / created (TT link))
+(Name of PB) – (note: reused / created (TT link))
+Policy: (name of the policy) CORE-…-….
 
-    // Default team selection
-    let selectedTeam = "GDN Scoping Team";
+Regards,
+Your Name`,
+        "Scoping Done - RW Not Needed - reused pb": `Hi,
+New initiative created for (initiative name):
+(Link to initiative)
+List of PBs:
+(Name of PB) – reused
+(Name of PB) – reused
+(Name of PB) – reused
 
-    let templates = teams[selectedTeam].templates;
+No RW required.
+The SIM will be updated once the initiatives have been deployed and launched.
+Policy: (name of the policy) CORE-…-….
 
-    // Function to load templates dynamically
-    function loadTemplates() {
-        GM_xmlhttpRequest({
-            method: "GET",
-            url: "URL_TO_TEMPLATES_JSON_FILE",
-            onload: function(response) {
-                const data = JSON.parse(response.responseText);
-                teams[selectedTeam].templates = data[selectedTeam].templates;
-                templates = teams[selectedTeam].templates;
-                alert("Templates updated successfully!");
-            }
-        });
-    }
+Regards,
+Your Name`,
+        "RW Progress Update": `Hi,
+Please find status of TT below:
+(name of PB) – (TT link) – (Assigned/WiP/resolved)
+(name of PB) – (TT link) – (Assigned/WiP/resolved)
+(name of PB) – (TT link) – (Assigned/WiP/resolved)
+
+Kind regards,
+Your Name`,
+        "Initiative Deployed and Launched": `Hi,
+Rule writing process is done.
+The tickets are resolved.
+Product banks are deployed.
+The initiative has been deployed and launched.
+
+Kind regards,
+Your Name`,
+    });
 
     let copyHistory = GM_getValue('copyHistory', []);
 
@@ -397,3 +413,4 @@ Your Name`,
 
     createUI();
 })();
+
