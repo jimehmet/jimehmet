@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rapid Reply
 // @namespace    http://tampermonkey.net/
-// @version      2.6
+// @version      2.7
 // @description  An assistant for correspondence.
 // @author       jimehmet
 // @match        https://issues.amazon.com/*
