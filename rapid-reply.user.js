@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rapid Reply
 // @namespace    http://tampermonkey.net/
-// @version      2.4
+// @version      2.5
 // @description  An assistant for correspondence.
 // @author       jimehmet
 // @match        https://issues.amazon.com/*
@@ -23,7 +23,7 @@
 // Carrier Pigeon: @jimehmet
 // Electronic Scroll: jimehmet@amazon.pl
 
-// I shall await thine missive with great anticipation.
+// I shall await thine missive with great anticipation..
 
 
 
