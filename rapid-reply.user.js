@@ -14,7 +14,7 @@
 
 
 
-// Hello, noble visitor!!
+// Hello, noble visitor!
 
 // I am jimehmet, the humble developer who crafted this code fortress. If thou hast questions or seek clarifications,
 // do not hesitate to send a raven through the realm of communication.
