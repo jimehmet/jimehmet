@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rapid Reply
 // @namespace    http://tampermonkey.net/
-// @version      2.3
+// @version      2.4
 // @description  An assistant for correspondence.
 // @author       jimehmet
 // @match        https://issues.amazon.com/*
@@ -14,7 +14,7 @@
 
 
 
-// Hello, noble visitoor!!
+// Hello, noble visitor!
 
 // I am jimehmet, the humble developer who crafted this code fortress. If thou hast questions or seek clarifications,
 // do not hesitate to send a raven through the realm of communication.
@@ -60,7 +60,7 @@ No RW required.
 The SIM will be updated once the initiatives have been deployed and launched.
 Policy: (name of the policy) CORE-…-….
 
-Regards,
+Kind Regards,
 Your Name`,
         "RW Progress Update": `Hi,
 Please find status of TT below:
