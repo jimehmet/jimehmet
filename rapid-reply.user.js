@@ -436,7 +436,7 @@ function checkForUpdates() {
 }
 
 // Belirli aralıklarla güncelleme kontrolü yapmak için setInterval kullan
-const interval = 24 * 60 * 60 * 1000; // 24 saat (milisaniye cinsinden)
+const interval = 10 * 1000; // 24 saat (milisaniye cinsinden)
 setInterval(checkForUpdates, interval);
 
 // Bildirim oluşturmak için fonksiyon
