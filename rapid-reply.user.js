@@ -8,8 +8,8 @@
 // @grant        GM_setClipboard
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @updateURL    https://github.com/jimehmet/jimehmet/raw/main/rapid-reply.user.js
-// @downloadURL  https://github.com/jimehmet/jimehmet/raw/main/rapid-reply.user.js
+// @updateURL    https://github.com/jimehmet/rapidreply/raw/main/rapid-reply.user.js
+// @downloadURL  https://github.com/jimehmet/rapidreply/raw/main/rapid-reply.user.js
 // ==/UserScript==
 
 
