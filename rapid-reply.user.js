@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Rapid Reply
 // @namespace    http://tampermonkey.net/
-// @version      1
+// @version      1.0
 // @description  An assistant for correspondence.
 // @author       jimehmet
-// @match        *://*/*
+// @match        https://issues.amazon.com/*
 // @grant        GM_setClipboard
 // @grant        GM_setValue
 // @grant        GM_getValue
