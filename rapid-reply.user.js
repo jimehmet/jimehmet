@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Rapid Reply
 // @namespace    http://tampermonkey.net/
-// @version      2.5
+// @version      2.6
 // @description  An assistant for correspondence.
 // @author       jimehmet
 // @match        https://issues.amazon.com/*
@@ -14,7 +14,7 @@
 
 
 
-// Hello, noble visitor!
+// Hello, noble visitor!!
 
 // I am jimehmet, the humble developer who crafted this code fortress. If thou hast questions or seek clarifications,
 // do not hesitate to send a raven through the realm of communication.
@@ -23,7 +23,7 @@
 // Carrier Pigeon: @jimehmet
 // Electronic Scroll: jimehmet@amazon.pl
 
-// I shall await thine missive with great anticipation..
+// I shall await thine missive with great anticipation.
 
 
 
