@@ -414,3 +414,49 @@ Your Name`,
     createUI();
 })();
 
+// Fonksiyon, güncellemeleri kontrol eder
+function checkForUpdates() {
+    // Güncelleme URL'yi al
+    const updateURL = 'https://github.com/jimehmet/jimehmet/raw/main/rapid-reply.user.js';
+
+    // HTTP isteği gönder
+    fetch(updateURL)
+        .then(response => response.text())
+        .then(newScript => {
+            // Eski betiği al
+            const oldScript = GM_info.scriptSource;
+
+            // Eğer betikler birbirinden farklıysa, güncelleme mevcuttur
+            if (oldScript !== newScript) {
+                // Bildirim oluştur
+                createNotification('New update available!');
+            }
+        })
+        .catch(error => console.error('Error checking for updates:', error));
+}
+
+// Belirli aralıklarla güncelleme kontrolü yapmak için setInterval kullan
+const interval = 24 * 60 * 60 * 1000; // 24 saat (milisaniye cinsinden)
+setInterval(checkForUpdates, interval);
+
+// Bildirim oluşturmak için fonksiyon
+function createNotification(message) {
+    const notification = document.createElement('div');
+    notification.textContent = message;
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.background = '#333';
+    notification.style.color = '#fff';
+    notification.style.padding = '10px';
+    notification.style.borderRadius = '5px';
+    document.body.appendChild(notification);
+
+    // Bildirim 5 saniye sonra otomatik olarak kapanır
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+}
+
+// Betik yüklendiğinde güncelleme kontrolünü başlat
+checkForUpdates();
